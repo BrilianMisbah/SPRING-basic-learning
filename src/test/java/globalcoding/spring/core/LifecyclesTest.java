@@ -5,6 +5,7 @@
 package globalcoding.spring.core;
 
 import globalcoding.spring.core.data.Connection;
+import globalcoding.spring.core.data.Server;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -36,5 +37,9 @@ public class LifecyclesTest {
     void testConnection(){
         Connection connection = applicationContext.getBean(Connection.class);
     }
-    
+       
+    @Test
+    void testServer(){
+        Server server = applicationContext.getBean(Server.class);
+    }
 }
